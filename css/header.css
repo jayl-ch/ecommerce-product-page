@@ -1,0 +1,50 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.navbar__start,
+.navbar__end {
+  display: flex;
+  align-items: center;
+  gap: 0.825rem;
+}
+
+/* brand name */
+.navbar__brand h1 {
+  margin: 0;
+}
+
+/* button reset */
+.navbar__cart,
+.navbar__menu-btn {
+  border: none;
+  background: none;
+  display: flex;
+}
+
+/* profile */
+.navbar__profile {
+  border-radius: 50%;
+  border: none;
+}
+
+.navbar__profile img {
+  width: 1.715rem;
+}
+
+/* navbar lists */
+.navbar__lists-wrapper {
+  position: fixed;
+  left: -50%;
+}
+
+@media all and (width > 62.5rem) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}

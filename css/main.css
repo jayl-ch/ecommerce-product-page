@@ -1,0 +1,157 @@
+.product {
+  max-width: 1000px;
+}
+
+.product__img-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.product__img-wrapper button {
+  position: absolute;
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev-btn {
+  left: 1rem;
+}
+
+.next-btn {
+  right: 1rem;
+}
+
+.product-img {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 0.5rem;
+}
+
+.product-img img {
+  width: 100%;
+  scroll-snap-align: center;
+}
+
+.product__content {
+  padding: 1rem;
+}
+
+.product__manufacturer {
+  margin-block-start: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--neutral-dark-grayish-blue);
+  font-size: 0.825rem;
+  letter-spacing: 0.1rem;
+}
+
+.product__title {
+  font-size: 2rem;
+  margin-block: 0;
+}
+
+.product__description {
+  color: var(--neutral-dark-grayish-blue);
+}
+
+.product__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--neutral-dark-grayish-blue);
+  font-weight: 700;
+}
+
+.new-price {
+  font-weight: 700;
+  font-size: 1.725rem;
+}
+
+.product__final-price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product__final-price .discount {
+  background-color: var(--neutral-very-dark-blue);
+  color: var(--neutral-white);
+  padding: 0.2rem 0.6rem;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.product__buy {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.product__buy .quantity {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.product__buy .quantity button {
+  position: absolute;
+  border: none;
+  background: none;
+}
+
+.increase {
+  right: 1rem;
+}
+
+.decrease {
+  left: 1rem;
+}
+
+.product__buy .quantity input {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  background-color: var(--neutral-light-grayish-blue);
+}
+
+.add-to-cart {
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--primary-orange);
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+}
+
+.add-to-cart svg {
+  fill: var(--neutral-very-dark-blue);
+}
+
+@media all and (width > 62.5rem) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  .product {
+    display: flex;
+  }
+}
