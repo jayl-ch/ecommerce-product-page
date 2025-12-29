@@ -23,6 +23,9 @@
           <button class="navbar__menu-btn">
             <img src="images/icon-menu.svg" alt="" />
           </button>
+          <div class="navbar__brand">
+            <h1>sneakers</h1>
+          </div>
           <div class="navbar__lists-wrapper">
             <button class="navbar__lists-close">
               <img src="images/icon-close.svg" alt="" />
@@ -35,9 +38,7 @@
               <li class="nav-links"><a href="">Contact</a></li>
             </ul>
           </div>
-          <div class="navbar__brand">
-            <h1>sneakers</h1>
-          </div>
+          <div class="overlay"></div>
         </div>
         <div class="navbar__end">
           <button class="navbar__cart">
@@ -51,19 +52,27 @@
     </header>
     <main>
       <section class="product">
-        <div class="product__img-wrapper">
-          <button class="prev-btn">
-            <img src="images/icon-previous.svg" alt="" />
-          </button>
-          <div class="product-img">
-            <img src="images/image-product-1.jpg" alt="" />
-            <img src="images/image-product-2.jpg" alt="" />
-            <img src="images/image-product-3.jpg" alt="" />
-            <img src="images/image-product-4.jpg" alt="" />
+        <div class="product__img-hero">
+          <div class="product__img-wrapper">
+            <button class="prev-btn">
+              <img src="images/icon-previous.svg" alt="" />
+            </button>
+            <div class="product-img">
+              <img src="images/image-product-1.jpg" alt="" />
+              <img src="images/image-product-2.jpg" alt="" />
+              <img src="images/image-product-3.jpg" alt="" />
+              <img src="images/image-product-4.jpg" alt="" />
+            </div>
+            <button class="next-btn">
+              <img src="images/icon-next.svg" alt="" />
+            </button>
           </div>
-          <button class="next-btn">
-            <img src="images/icon-next.svg" alt="" />
-          </button>
+          <div class="product__img-thumbnail">
+            <img src="images/image-product-1-thumbnail.jpg" alt="" />
+            <img src="images/image-product-2-thumbnail.jpg" alt="" />
+            <img src="images/image-product-3-thumbnail.jpg" alt="" />
+            <img src="images/image-product-4-thumbnail.jpg" alt="" />
+          </div>
         </div>
         <div class="product__content">
           <div class="product__content-text">
@@ -109,6 +118,6 @@
     <!--   Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.  -->
     <!--   Coded by <a href="#">Your Name Here</a>. -->
     <!-- </div> -->
-    <script src="script/main.js"></script>
+    <script type="module" src="script/main.js"></script>
   </body>
 </html>
