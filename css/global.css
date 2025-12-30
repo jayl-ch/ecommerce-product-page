@@ -10,6 +10,8 @@
   --neutral-light-grayish-blue: hsl(223, 64%, 98%);
   --neutral-white: hsl(0, 0%, 100%);
   --neutral-black-75: hsl(0, 0%, 0%);
+  
+  --border-line: hsla(219, 9%, 45%, .2);
 }
 
 *,

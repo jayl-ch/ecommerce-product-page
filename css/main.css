@@ -164,7 +164,7 @@ input[type="number"] {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 4.45rem);
+    min-height: calc(100vh - 5.45rem);
   }
   .product {
     display: grid;
@@ -180,26 +180,26 @@ input[type="number"] {
   }
   .product__img-thumbnail {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     width: 100%;
   }
   .product__img-thumbnail img {
     border-radius: 10px;
     object-fit: cover;
-    max-width: calc(25% - 0.75rem);
+    max-width: calc(25% - 1.125rem);
   }
   .product__img-wrapper button {
     display: none;
   }
   .product__img-hero {
-    max-width: 25rem;
+    max-width: 28rem;
     display: grid;
-    gap: 1rem;
+    gap: 2rem;
   }
   .product__price {
     display: grid;
   }
   .product__buy {
-    grid-template-columns: 0.8125fr 1fr;
+    grid-template-columns: 0.7125fr 1fr;
   }
 }
