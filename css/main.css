@@ -131,6 +131,10 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
+.quantity img {
+  pointer-events: none;
+}
+
 .product__buy .quantity input {
   width: 100%;
   padding: 1rem;
@@ -190,12 +194,31 @@ input[type="number"] {
     border: none;
     margin: 0;
     padding: 0;
+    cursor: pointer;
+    position: relative;
+  }
+  .product__img-thumbnail button:focus-visible {
+    outline: solid var(--primary-orange);
+  }
+  .product__img-thumbnail button::before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.2);
+    inset: 0;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+  }
+  .product__img-thumbnail button:hover::before,
+  .product__img-thumbnail button:focus-visible::before {
+    opacity: 1;
   }
   .product__img-thumbnail img {
     object-fit: cover;
     border-radius: 10px;
     width: 100%;
     pointer-events: none;
+    display: block;
   }
   .product__img-wrapper button {
     display: none;
