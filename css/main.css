@@ -183,10 +183,19 @@ input[type="number"] {
     gap: 1.5rem;
     width: 100%;
   }
-  .product__img-thumbnail img {
-    border-radius: 10px;
-    object-fit: cover;
+  .product__img-thumbnail button {
     max-width: calc(25% - 1.125rem);
+    aspect-ratio: 1;
+    border-radius: 10px;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .product__img-thumbnail img {
+    object-fit: cover;
+    border-radius: 10px;
+    width: 100%;
+    pointer-events: none;
   }
   .product__img-wrapper button {
     display: none;
