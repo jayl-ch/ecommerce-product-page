@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght,YOPQ@100..900,300&display=swap");
-
 :root {
   --primary-orange: hsl(26, 100%, 55%);
   --primary-pale-orange: hsl(25, 100%, 94%);
@@ -13,16 +11,5 @@
 
   --border-line: hsla(219, 9%, 45%, 0.2);
   --primary-orange-hover: hsla(26, 100%, 55%, 0.8);
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Kumbh Sans", sans-serif;
-  margin: 0;
-  overflow-x: hidden;
+  --font-base: "Kumbh Sans", sans-serif;
 }

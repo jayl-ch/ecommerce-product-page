@@ -1,0 +1,6 @@
+@media all and (width > 62.5rem) {
+  header {
+    display: flex;
+    justify-content: center;
+  }
+}

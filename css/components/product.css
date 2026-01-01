@@ -35,10 +35,6 @@
   scrollbar-width: none;
 }
 
-.product-img::-webkit-scrollbar {
-  display: none;
-}
-
 .product-img img {
   width: 100%;
   scroll-snap-align: center;
@@ -126,17 +122,6 @@
   left: 1rem;
 }
 
-/* removed arrow button for number input */
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 .quantity img {
   pointer-events: none;
 }
@@ -183,12 +168,12 @@ input[type="number"] {
 }
 
 @media all and (width > 62.5rem) {
-  main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: calc(100vh - 5.45rem);
-  }
+  /* main { */
+  /*   display: flex; */
+  /*   justify-content: center; */
+  /*   align-items: center; */
+  /*   min-height: calc(100vh - 5.45rem); */
+  /* } */
   .product {
     display: grid;
     grid-template-columns: 1fr 1fr;
