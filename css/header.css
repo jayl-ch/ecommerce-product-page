@@ -15,6 +15,12 @@
 }
 
 /* brand name */
+
+.navbar__brand a {
+  text-decoration: none;
+  color: var(--neutral-very-dark-blue);
+}
+
 .navbar__brand h1 {
   margin: 0;
 }
@@ -30,7 +36,12 @@
 /* profile */
 .navbar__profile {
   border-radius: 50%;
-  border: none;
+  border: solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.navbar__profile:hover {
+  border: solid var(--primary-orange);
 }
 
 .navbar__profile img {
@@ -86,9 +97,10 @@
 .overlay {
   background-color: var(--neutral-black-75);
   position: fixed;
-  width: 100vw;
-  height: 200vh;
-  left: 0;
+  /* width: 100vw; */
+  /* height: 200vh; */
+  inset: 0;
+  /* left: 0; */
   z-index: 100;
   opacity: 0;
   pointer-events: none;
@@ -96,7 +108,7 @@
 
 .overlay.active {
   opacity: 0.75;
-  pointer-events: visible;
+  pointer-events: auto;
 }
 
 .navbar__end {
@@ -106,6 +118,11 @@
 .navbar__cart {
   cursor: pointer;
   position: relative;
+  fill: #69707d;
+}
+
+.navbar__cart:hover svg {
+  fill: var(--neutral-very-dark-blue);
 }
 
 .navbar__cart > span {
@@ -154,7 +171,7 @@
 
 .cart.active {
   opacity: 1;
-  pointer-events: visible;
+  pointer-events: auto;
 }
 
 .cart__inventory .checkout {
@@ -184,6 +201,7 @@
 .receipt .delete {
   border: none;
   background: none;
+  cursor: pointer;
 }
 @media all and (width > 62.5rem) {
   header {
@@ -201,6 +219,7 @@
     min-height: auto;
     width: auto;
     padding: 0 1rem;
+    z-index: 1;
   }
   .navbar__lists {
     display: flex;
@@ -209,6 +228,23 @@
   }
   .navbar__lists a {
     color: var(--neutral-dark-grayish-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+  }
+  .navbar__lists a::before {
+    content: "";
+    height: 120%;
+    width: 0;
+    position: absolute;
+    border-block-end: solid var(--primary-orange);
+  }
+  .navbar__lists a:hover {
+    color: var(--neutral-very-dark-blue);
+  }
+  .navbar__lists a:hover::before {
+    width: 100%;
   }
   .overlay {
     display: none;
@@ -224,5 +260,14 @@
     transition:
       opacity 300ms ease,
       box-shadow 350ms ease;
+  }
+  .navbar__lists a::before {
+    transition: width 200ms ease;
+  }
+  .navbar__profile {
+    transition: border 200ms ease;
+  }
+  .navbar__cart svg {
+    transition: fill 200ms ease;
   }
 }
