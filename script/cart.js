@@ -54,12 +54,12 @@ function addInventory(cartInv, qnty, cartButton) {
   receiptWrapper.append(div, checkout);
 
   cartInv.appendChild(receiptWrapper);
+  cartInv.style.height = "auto";
 
+  if (cartButton.querySelector("span")) return;
   const spanQty = document.createElement("span");
   spanQty.textContent = qnty.value;
   cartButton.appendChild(spanQty);
-
-  cartInv.style.height = "auto";
 }
 
 function removeItem(cartInv, target, cartButton) {
@@ -103,5 +103,6 @@ addtocart.addEventListener("click", () => {
   const del = document.querySelector(".delete");
   del.addEventListener("click", (e) => {
     removeItem(cartInventory, e.target, cartBtn);
+    cartBtn.querySelector(":scope > span").remove();
   });
 });
